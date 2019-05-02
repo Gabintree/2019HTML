@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="./css/custom.css">
+    <script src='main.js'></script>
+</head>
+
+<body>
+
+    <!-- -p.71 목록을 만드는 태그. -->
+    <h1>관광 안내 전화</h1>
+    <p>한국관광공사에서는 …… 실시하고 있습니다</p>
+    <p>1330에는 …… 이용 가능합니다.</p>
+    <ul>
+        <li>일반전화 : (국번없이) 1330</li>
+        <li>휴대전화 : 064-1330</li>
+    </ul>
+    <h1>1박 2일 가족 여행 코스</h1>
+    <ul>
+        <li>1일차
+            <ol type="a">
+                <li>해녀박물관</li>
+                <li>낚시체험</li>
+            </ol>
+        </li>
+        <li>2일차
+            <ol type="a" start="3">
+                <li>용눈이오름</li>
+                <li>만장굴</li>
+                <li>카약체험</li>
+            </ol>
+        </li>
+    </ul>
+
+    <h1>제주 올레</h1>
+    <dl>
+        <dt>올레 1코스</dt>
+        <dd>코스 : 시흥 초등학교 옆 - 광치기 해변</dd>
+        <dd>거리 : 14.6km(4~5시간)</dd>
+        <dd>난이도 : 중</dd>
+        <dt>올레 2코스</dt>
+        <dd>코스 : 광치기 해변 - 온평 포구</dd>
+        <dd>거리 : 14.5km(4~5시간)</dd>
+        <dd>난이도 : 중</dd>
+    </dl>
+
+    <h1>국가 전염병 위기 경보 수준</h1>
+    <ol type="A">
+        <li>관심</li>
+        <li>주의</li>
+        <li>경계</li>
+        <li>심각</li>
+    </ol>
+
+    <img src ="./사진/alpaca.jpg" width="250" height="150"
+    <br>
+    <h1>Kyunghee Ko</h1>
+
+    <p>이메일 : founcom@gmail.com</p>
+
+    <h2>Who I am?</h2>
+
+    <p>프런트엔드 웹 기술(Front-end Web Tech.)에 관심을 가지고 있습니다.<br>
+        현재 마이크로소프트 공인 최고기술전문가(Most Valueable Professional)로 활동 중이며,<br>
+        제주의 한 시골 마을에서 코딩 중입니다.</p>
+    <hr>
+    <h2>skills</h2>
+
+    <ul>
+        <li>사용언어</li>
+        <ul>
+            <li><mark>HTML</mark></li>
+            <li><mark>CSS</mark></li>
+            <li>Javascript</li>
+            <li>AngularJS</li>
+        </ul>
+        <li>사용 툴</li>
+        <ul>
+            <li>Photoshop(12years)</li>
+            <li>Dreamwraver(19years)</li>
+            <li><b>Visual Studio(5years)</b></li>
+        </ul>
+    </ul>
+    <!-- -p.80 표를 만드는 태그. -->
+    <table border="1">
+        <tr>
+            <th>제목 셀</th>
+            <td>1행 2열</td>
+            <td>1행 3열</td>
+        </tr>
+        <tr>
+            <th>제목 셀</th>
+            <td>2행 2열</td>
+            <td>2행 3열</td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <colgroup>
+        <col style="width:100px; background-color: green">
+        <col style="width:100px;">
+        <col style="width:100px; background-color: green">
+        <col style="width:100px; padding:10px;">
+        </colgroup>
+        <tr>
+            <th style "padding :30px;">이름</th>
+            <td></td>
+            <th>연락처</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>주소</th>
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <th>자기소개</th>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <caption>
+            <strong>Mordern Browser</strong>
+            <p>국내에서 자주 사용하는 모던 브라우저</p>
+        </caption>
+        <tr>
+            <th>브라우저</th>
+            <th>제조업체</th>
+            <th>다운로드</th>
+        </tr>
+    </table>
+
+    <figure>
+        <figcaption>
+            <p>국내에서 자주 사용하는 <b>모던 브라우저</b></p>
+        </figcaption>
+        <table border="1">
+            <tr>
+                <th>브라우저</th>
+                <th>제조업체</th>
+                <th>다운로드</th>
+            </tr>
+        </table>
+    </figure>
+
+    <p id="summary">다음 표는 HTML5를 지원하는 모던(Mordern Browser)를 정리한 것입니다. 최신 버전일 수록 HTML5를 좀 더 많이 지원하기 때문에 최신 버전을 다운로드 하는 것이
+        좋습니다.</p>
+    <table border="1" aria-descripedly="summary">
+        <caption>Mordern Browser</caption>
+        <tr>
+            <th>브라우저</th>
+            <th>제조업체</th>
+            <th>다운로드</th>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td rowspan="2"> 자산 : 현금,
+                <br>현금 외 자산</td>
+            <td>부채 : 차입금</td>
+        </tr>
+        <tr>
+            <td>자본:자본금, 이익잉여금</td>
+        </tr>
+    </table>
+
+
+
+
+    <table border="1">
+        <caption>제주특별자치도 학교현황(2015.04.01 기준)</caption>
+        <thead>
+            <tr>
+                <th>구분</th>
+                <th>학교수</th>
+                <th>학급수</th>
+                <th>학생수</th>
+                <th>교원수</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>유치원</th>
+                <th>117</th>
+                <th>252</th>
+                <th>5,547</th>
+                <td>474</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>합계</th>
+                <td>304</td>
+                <td>3,437</td>
+                <td>86,954</td>
+                <td>6,111</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <table border="1">
+        <caption>colgroup 연습</caption>
+        <colgroup>
+            <col>
+            <col span="2" style="background-color: blue;">
+            <col style="background-color:yellow">
+        </colgroup>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <caption> 1인당 연간 설탕 소비량
+            <small>(단위:kg)</small></caption>
+        <colgroup>
+            <col style="background-color:#eee;">
+            <col>
+        </colgroup>
+        <tr>
+            <th>WHO 권장량</th>
+            <td>18.25</td>
+        </tr>
+    </table>
+
+<!-- width : 셀의 너비 -->
+<!-- padding : 셀의 테두리와 내용 사이의 간격 -->
+<!-- <style>
+ th, td {
+     width : 80px;
+     padding : 10px;
+ }
+ thead, tfoot{
+     background : white;
+ }
+ </style>  이걸 테이블의 head 앞에 기록하면 전체 적용됨.-->
+
+ <!-- padding 과 margin의 차이?? 글자 안쪽은 padding, 
+  글 밖의 다른 테두리?가 침범하지 못하게 하는 게 margin -->
+
+
+
+  <hr>
+  <hr>
+  <hr>
+<!-- 96~97꼭 해보기
+ -->
+
+
+
+
+
+
+ <!-- 이미지와 하이퍼링크 p.100 -->
+ <img src="./사진/animals-.jpg" alt="사진이 없으면 뜨는 메시지라고 합니다 ">
+ <br>
+ <img src="./사진/butterfly.png" width="750" height="750">
+ 
+<hr>
+
+<h1>텍스트 링크 만들기</h1>
+<a href="http://www.easypub.com">이지스퍼블리싱 홈페이지</a>
+<h1>이미지 링크 만들기</h1>
+<a href="http://www.easypub.com">
+<img src="사진/dandelion.jpg">
+</a>
+
+<h1>텍스트 링크 만들기</h1>
+<p><a href="http://www.easypub.com">이지스퍼블리싱 홈페이지(현재화면)</a></p>
+<p><a href="http://easypub.com" target="_blank">이지스퍼블리싱 홈페이지(새 창 또는 새 탭)</a></p>
+
+<iframe src="child.html" width="600" height="400"></iframe>
+<a href="http://easypub.co.kr/20_menu/BokView/65" target="_top">도서 상세보기</a>
+
+<ul id="menu">
+    <li><a href="#content1">메뉴1</a></li>
+    <li><a href="#content2">메뉴2</a></li>
+    <li><a href="#content3">메뉴3</a></li>
+</ul>
+    <h2 id="content1">내용1</h2>
+    <p>웹 문서가 너무 길 경우 앵커(anchor)라고 합니다.</p>
+    <p><a href="#menu">[메뉴로]</a></p>
+    <h2 id="content2">내용2</h2>
+    <p>웹 문서가 너무 길 경우 앵커(anchor)라고 합니다.</p>
+    <p><a href="#menu">[메뉴로]</a></p>
+    <h2 id="content3">내용3</h2>
+    <p>웹 문서가 너무 길 경우 앵커(anchor)라고 합니다.</p>
+    <p><a href="#menu">[메뉴로]</a></p>
+
+    <img src="./사진/편집장양아치.svg"
+<!-- https://game.uncyclopedia.kr/wiki/%ED%8C%8C%EC%9D%BC:%ED%8E%B8%EC%A7%91%EC%9E%A5%EC%96%91%EC%95%84%EC%B9%98.svg -->
+
+
+
+<img src="./사진/gummi.jpg" alt="음...... " style="margin-top: 100px";
+usemap="#gummiMap">
+<map name="gummiMap">
+    <area shape="rect" coords="166,37,373,196" href="http://naver.com" alt="네이버로 가자" target="_blank">
+
+</map>
+
+
+</body>
+
+</html>

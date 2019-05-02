@@ -1,0 +1,13 @@
+
+
+th, td {
+    width : 80px; 
+    padding : 10px;
+}
+thead, tfoot{
+    background : gray;
+}
+body {
+    background-color : beige;
+    /* background-image: url("../사진/1656e75863321ad.png"); */
+}
