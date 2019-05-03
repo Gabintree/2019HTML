@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+
+    <style>
+    .container{
+        width:600px;
+        margin:0 auto;
+    }
+
+    ul
+    {
+        list-style-type: none;
+    }
+    label.title {
+        font-weight: bold;
+        width: 80px;
+        float: lefr;
+    }    
+    div.centred{
+        text-align: center
+    }
+    fieldset{
+        margin : 15px 10px;
+    }  
+    fieldset legend{
+        font-weight: bold;
+        font-size: 18px;
+        color:purple;
+    }
+    ul li{
+        margin-bottom: 10px;
+    } 
+    .subm:hover {
+        background-color: aqua; 
+          /* 커서 올라갔을 때 색깔 변하게 하는 방법 */
+    }       
+    </style>
+</head>
+
+<body>
+  
+    <form action="죄인의0503.html" method="post">
+        <ul>
+            <li>
+                <label for="id">아이디</label>
+                <input type="text" id="id">
+            </li>
+            <li>
+                <label for="pw">비밀번호</label>
+                <input type="password" id="pw">
+            </li>
+                <input type="submit" title="로그인" value="로그인">
+        </ul>
+    </form>
+
+
+    <form>
+        <h3>수강 분야(다수 선택 가능)</h3>
+        <ul>
+            <li> <input name="subject_list" type="checkbox" value="grm">문법</li>
+            <li> <input name="subject_list" type="checkbox" value="wr">작문</li> 
+            <li> <input name="subject_list" type="checkbox" value="rd">독해</li>
+        </ul>
+
+        <h3>수강 과목(1과목만 선택 가능)</h3>
+        <ul>
+            <li>
+                <label><input type="radio" name="subject" value="eng">영어회화</label>
+            </li>
+            <li>
+                <label><input type="radio" name="subject" value="ch">중국어회화</label>
+            </li>
+            <li><label><input type="radio" name="subject" value="jp">일어회화</label>
+            </li>
+        </ul>
+    </form>
+ 
+
+    <form>
+        <fieldset>
+            <legend>개인정보</legend>
+            <ul>
+                <li>
+                    <label for="user-name">이름</label>
+                    <input type="text" id="user-name">
+                </li>
+            <li>
+                <label for="mail">메일주소</label>
+                <input type="email" id="mail">
+            </li>
+            <li>
+                <label for="phone">연락처</label>
+                <input type="tel" id="phone">
+            </li>
+            <li>
+                <label for="homep">블로그/홈페이지
+                <input type="url" id="homep"> 
+                </label>
+            </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <ul>
+                <li>
+                    <label for="id">아이디</label>
+                    <input type="text" id="id">
+                </li>
+                <li>
+                    <label for="pwd">비밀번호</label>
+                    <input type="text" id="pwd">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+    
+
+    <fieldset>
+        <legend>등록 정보</legend>
+        <ul>
+            <li>
+                <label class="reg" for="member">참여인원<small>최대10명</small></label>
+                <input type="number" for="member" value="1" min="0" max="10" step="1">
+            </li>
+            <li>
+                <label class="reg" for="stuffs">지원물품<small>(1인당5개)</small></label>
+                <input type="number" id="stuffs" value="1" min="0" max="50" step="5" size="5">
+            </li>
+            <li>
+                <label class="reg" for="satis">희망단계<small>(하,중,상)</small></label>
+                <input type="range" id="statis" value="1" min="1" max="3">
+            </li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>신청과목</legend>
+        <p>이 달에 신청할 과목을 선택하세요(1과목만 가능)</p>
+        <label><input type="radio" name="subject" value="speaking">회화</label>
+        <label><input type="radio" nam="subject" value="grammar">문법</label>
+        <label><input type="radio" name="subject" value="writing">작문</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>메일링</legend>
+        <p>메일로 받고 싶은 뉴스 주제를 선택해 주세요(복수 선택 가능)</p>
+        <label><input type="checkbox" name="mailing1" value="news">해외 단신</label>
+        <label><input type="checkbox" name="mailing2" value="dialog">5분회화</label>
+    </fieldset>
+
+ <label><input type="date" id="start"></label>
+ <label><input type="date" id="end"></label>
+
+ <h3>원하는 대관시간을 선택하세요(오늘)</h3>
+    <label>시작시간<input type="time" value="09:00" id="start"></label>
+    <label>종료시간<input type="time" value="18:00" id="end"></label>
+
+ <h3>대관시간을 선택하세요(다른 날짜)</h3>
+    <label>시작시간<input type="datetime-local" value="2016-03-02T09:00" id="start"></label>
+    <label>종료시간<input type="datetiom-local" value="2016-03-02T18:00" id="end"></label>
+
+    <br>
+    <br>
+    <form action="register.php" method="post">
+        <label>메일주소 <input type="text"></label>
+        <input type="submit" value="제출">
+        <input type="reset" value="다시입력">
+    </form>
+
+    <label>아이디<input type="text" size="15"></label>
+    <label>비밀번호<input type="password" size="15"></label>
+    <input type="image" id="butt" src="./사진/login.jpg" alt="login">
+
+    <br>
+    <br>
+    <br>
+    <form>
+        <input type="button" value="닫기" onclick="window.close()">
+    </form>
+
+    <label class = "reg" for="uname">이름</label>
+    <input type="text" id="uname" autofocus required>
+
+    <label class="reg" for="uid">학번</label>
+    <input type="text" id="uid" placeholder="하이픈없이 입력">
+
+    <label class="reg" for="subj">영어회화(초급)</label>
+    <input type="text" id="subj" value="오전 9:00~11:00" readonly>
+    <br>
+    <br>
+    <label class="reg" for="uname">이름</label>
+    <input type="text" id="uname" autofocus required>
+
+    <label class="reg" for="group">단체주문</label>
+    <input type="number" id="group" value="10" min="100" step="10">
+
+
+    <label>아이디: <input type="text" id="user_id" size="10" minlength="4" maxlength="15"></label>
+    <small style="color:red">4~15자리 이내의 영문과 숫자</small>
+
+    <div class="container">
+        <h1>상품 주문서</h1>
+        <fieldset>
+            <legend>개인정보</legend>
+            <ul>
+                <li>
+                    <label for="uname" class="title">이름</label>
+                    <input type="text" id="uname" placeholder="여백없이 입력" required>
+                </li>
+                <li>
+                    <label for="tel1" class="title">연락처</label>
+                    <input type="tel" id="tel1" placeholder="연락가능한 번호">
+                </li>                
+            </ul>
+         </fieldset>
+        <fieldset>
+            <legend>배송지 정보</legend>
+            <ul>
+                <li>
+                    <label for="addr" class="title">주소</label>
+                    <input type="text" size="40" id="addr" required>
+                </li>
+                <li>
+                    <label for="tel2" class="title">전화번호</label>
+                    <input type="tel" id="tel2" required>
+                </li>
+                <li>
+                    <label for="memo" class="title">메모</label>
+                    <textarea cols="40" rows="3" id="memo"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+         <fieldset>
+            <legend>주문정보</legend>
+            <ul>
+                <li>
+                    <label><input type="checkbox">과테말라 안티구아 (100g) </label>
+                    <label><input type="number" value="0" min="0" max="5">개</label>
+                </li>
+                <li>
+                    <label><input type="checkbox">인도네시아 만델링 (100g)</label>
+                    <label><input type="number" value="0" min="0" max="5">개</label>
+                </li>
+                <li>
+                    <label><input type="checkbox">탐라는도다(블렌딩) (100g)</label>
+                    <label><input type="number" value="0" min="0" max="5">개</label>
+                </li>
+            </ul>
+         </fieldset>
+      </div>
+
+
+
+
+      <label class="reg" for="class">학과</label>
+      <select id="class">
+          <optgroup label="공과대학">
+          <option value="archi">건축공학과</option>
+          <option value="mechanic">기계공학과</option>
+          <option value="indust">산업공학과</option>
+          <option value="elec">전기전자공학과</option>
+          <option value="computer">컴퓨터공학과</option>
+          <option value="chemical">화학공학과</option>
+        </optgroup>
+        <optgroup label="인문대학">
+            <option value="history">사학과</option>
+            <option value="lang">어문학부</option>
+            <option value="philo">철학</option>
+        </optgroup>
+      </select>
+
+      <input type="text" id="interst" list="choices">
+      <datalist id="choices">
+          <option value="grammar" label="문법"></option>
+          <option value="voca" label="어휘"></option>
+          <option value="speaking" label="회화"></option>
+          <option value="listening" label="리스닝"></option>
+          <option value="news" label="뉴스청취"></option>
+      </datalist>
+      
+      <br>
+      <br>
+      <br>
+
+       <textarea name="intro" cols="60" rows="5">
+        열심히 사는 사람들의 손을 잡아주는 곳 - 이지스퍼블리싱
+        우리는 책을 내기 전에 다시 한 번 물어봅니다.
+        " 이 책이 사람들에게 도움이 되는가?"
+        더 쉽게 더 빠르게 지식을 전달하고 싶습니다.
+        이지스퍼블리싱의 책과 앱을 만나보세요.
+    </textarea>
+
+    <input type="submit" vlaue="전송하기">
+    <button type="submit">전송하기</button>
+
+    <form>
+        <button type="submit" class="subm">
+            <img src="./사진/tick.png" alt=""> 전송하기
+        </button>
+    </form>
+
+    <form oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+        <input type="number" name="num1" value="0">
+        <input type="number" name="num2" value="0">
+        =<output name="result" for="num"></output>
+    </form>
+
+
+    <ul>
+        <li>
+            <label>10초 남음</label>
+            <!--전체 60초 중 50초 진행 -->
+            <progress value="50" max="60"></progress>
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            <label>점유율 0.8</label>
+            <!-- 전체 크기 1을 기준으로 0.8만큼 차지합니다. -->
+            <meter min="0" max="100" value="64"></meter>
+        </li>
+        <li>
+            <label>사용량 64%</label>
+            <!-- 전체 100중에서 64만큼 차지합니다. -->
+            <meter min="1024" max="10240" low="2048" high="8192" value="9216"></meter>
+        </li>
+        <li>
+            <label>트래픽 초과</label>
+            <!-- 전체 크기는 1024~10240인데 높다고 설정한 8192보다 현재 값 9216이 더 큽니다. -->
+            <meter min="1024" max="10240" low="2048" high="8192" value="9216"></meter>
+        </li>
+        <li>
+            <label>적절한 트래픽</label>
+            <!-- 전체 1중에서 현재 0.5를 차지하고 있으며 적정도를 0.8로 설정했습니다. -->
+            <meter value="0.5" optimum="0.8"></meter>
+        </li>
+    </ul>
+
+
+</body>
+
+
+</html>
