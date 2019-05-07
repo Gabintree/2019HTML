@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset='utf-8'>
+    <title>블루베리(Blueberry)</title>
+    <style>
+    h2.bluetext {
+        color:blue;
+    }
+    .redtext {
+        color:red;
+    }
+    p{
+        font-size:12px;
+        margin-left:20px;
+    }
+    #block img {
+        display:block;
+        margin:10px;
+    }
+    nav ul li {
+        display : inline-block;
+        margin:20px;
+    }
+    .mungmung {
+        background-color:rgba(8, 8, 156, 0.952);
+    }
+    .mungmung li a {
+        color:white;
+        text-decoration: none;
+    }
+    #inline {
+        border:1px solid black;
+        display: inline-block;
+        padding:0;
+        margin:0;
+    }
+    .mm {
+        width:100px;
+        height:100px;
+        margin:30px;
+        display:inline-block;
+    }
+    .box div{
+        width:200px;
+        height:100px;
+        margin:15px;
+        display:inline-block;
+        border-width: 5px;
+    }
+    .box div:first-child {
+        border-style: solid;
+    }
+    .box div:nth-child(2){
+        border-style: dotted;
+    }
+    .box div:last-child{
+        border-style: dashed;
+    }
+
+    </style>
+  
+</head>
+<body>
+        <h1>블루베리에 관한 연구</h1>
+        <h2 class="bluetext">블루베리와 항산화 효능</h2> 
+        <p class="bluetext">블루베리는 항산화제인 안토시아닌과 폴리페놀을 다량 포함하고 있습니다.</p>
+        <p>매사츄세츠 보스톤에 있는 <span class="redtext">USDA 노화에 관한 인류 영양 연구센터 (the USDA Human Nutrition Research Center on Aging)</span> 의 자료에 의하면
+         블루베리는 과일 중에서 가장 항산화 작용이 뛰어난 과일이라고 합니다.  </p>
+        <h2>블루베리와 노화</h2> 
+        <p><span class="redtext"> USDA 인류 영양 연구센터(the USDA Human Nutrition Research Center) </span> 신경과학자들은 쥐들에게 블루베리를 먹임으로써 
+        노화에 의한 인지능력의 손실을 예방해 준다는 사실을 발견하였습니다. </p>
+       
+        <div>
+                <img src="../예제)HTML/08/images/pic1.jpg">
+                <img src="../예제)HTML/08/images/pic2.jpg">
+                <img src="../예제)HTML/08/images/pic3.jpg">
+            </div>
+            <div id="block">
+                <img src="../예제)HTML/08/images/pic1.jpg">
+                <img src="../예제)HTML/08/images/pic2.jpg">
+                <img src="../예제)HTML/08/images/pic3.jpg">
+            </div>
+        <nav>
+            <ul class="mungmung">
+                <li><a href="#">애완견 종류</a></li>
+                <li><a href="#">입양하기</a></li>
+                <li><a href="#">건강돌보기</a></li>
+                <li><a href="#">더불어살기</a></li>
+            </ul>
+
+            <h2>애완견 종류</h2>
+        </nav>
+
+        <br>
+        <br>
+        <div id="inline">
+            <div class="mm" style="background:green"></div>
+            <div class="mm" style="background:orange"></div>
+            <div class="mm" style="background:blue"></div>
+        </div>
+
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+    </body>
+</html>
