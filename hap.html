@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            .container{
+                width:600px;
+                margin:0 auto;
+            }
+        
+            ul
+            {
+                list-style-type: none;
+            }
+            label.title {
+                font-weight: bold;
+                width: 80px;
+                float: lefr;
+            }    
+            div.centred{
+                text-align: center
+            }
+            fieldset{
+                margin : 15px 10px;
+            }  
+            fieldset legend{
+                font-weight: bold;
+                font-size: 18px;
+                color:purple;
+            }
+            ul li{
+                margin-bottom: 10px;
+            } 
+            .subm:hover {
+                background-color: aqua; 
+                  /* 커서 올라갔을 때 색깔 변하게 하는 방법 */
+            }      
+            h2.bluetext {
+        color:blue;
+    }
+    .redtext {
+        color:red;
+    }
+    p{
+        font-size:12px;
+        margin-left:20px;
+    }
+    #block img {
+        display:block;
+        margin:10px;
+    }
+    nav ul li {
+        display : inline-block;
+        margin:20px;
+    }
+    .mungmung {
+        background-color:rgba(8, 8, 156, 0.952);
+    }
+    .mungmung li a {
+        color:white;
+        text-decoration: none;
+    }
+    #inline {
+        border:1px solid black;
+        display: inline-block;
+        padding:0;
+        margin:0;
+    }
+    .mm {
+        width:100px;
+        height:100px;
+        margin:30px;
+        display:inline-block;
+    }
+    .box div{
+        width:200px;
+        height:100px;
+        margin:15px;
+        display:inline-block;
+        border-width: 5px;
+    }
+    .box div:first-child {
+        border-style: solid;
+    }
+    .box div:nth-child(2){
+        border-style: dotted;
+    }
+    .box div:last-child{
+        border-style: dashed;
+    }
+ 
+            </style>
+</head>
+
+<body>
+    <h1>제주 이색 여행지</h1>
+    <h2>야외 텐트를 닮은 건축물 "테쉬폰"</h2>
+    <p>아일랜드 출신 임피제 신부가 1954년 제주에 오면서 목장 숙소로 짓기 시작한 후 사료공장, 성당으로 활용됐습니다.</p>
+    <p>제주에서 점차 다른 지방으로 보급됐지만 현재 제주에만 건축물이 남아있는데, <br>
+        국내 근현대 건축사의 한 페이지를 보여주는 가치를 지닌다고 전문가들은 평가합니다.</p>
+    <hr>
+    <blockquote>성이시들목장은 제주특별자치도 제주시 한림읍 금악리에 있는 목장이다.
+        특히 이시들목장은 제주 지역 최초의 전기업목장(全企業牧場)으로
+        1961년 11월 말 제주시 한림읍 금악리에 세워 양돈 사업을 실시하였으며 면양을 사육하였던 것으로 알려져 있다.
+        이시들목장의 특색있는 건축양식으로 테쉬폰도 유명하다. (출처 : 향토문화전자대전)</blockquote>
+
+
+    <h3>로컬 스토리지(Local Storage)를 저장하는 함수 : </h3>
+    <pre>
+           function savetheLocal(){
+               var second = document.getElementById("second");
+               var thevalue = second.value;
+               localStorage,setItem(1, thevalue);
+               gettheLocal();
+           }
+     </pre>
+    <h3>재난 대비 국민행동 요령</h3>
+    <blockquote>지진으로 흔들리는 동안은 테이블(책상) 밑에 들어가 몸을 보호한다
+        <br>(출처:국민안전처)</blockquote>
+
+
+    <h2>제주 이색 여행지 - 이중섭 거리</h2>
+    <p><strong>주말</strong>마다<b> '서귀포문화예술디자인시장'</b>이 열립니다.</p>
+    <p><em>'아트마켓'</em>이라고도 부르는데<i>문화예술체험</i>이나<i>공연관람</i>을 할 수도 있고
+        <br>작가들이 직접 만든 창작예술품 등을 판매하기도 합니다.</p>
+
+    <h1>웹 접근성</h1>
+    <p>웹의 창시자인 팀 버너스 리 (Tim Berners-Lee)의 <q cite="http://w3.org/standards/webdesign/accessibility"> 웹의 힘은
+            보편성에 있다. 장애에 구애없이 모든 사람이 접근할 수 있는 것이 필수적인 요소이다.</q> 라는 말로 웹 접근성을 설명한다.</p>
+
+    <h2>야외 텐트를 닮은 건축물 <mark>"테쉬폰"</mark></h2>
+    <p>아일랜드 출신 … … 남아 있으며 <span style="color:tomato; font-family: D2coding;">국내 근현대 건축사의 한 페이지를 보여주는 가치를 지닌다</span>고
+        전문가들은 평가합니다. </p>
+
+    <p>루비(Ruby)는 1995년 일본의 프로그래머인 마츠모토 유키히로(<ruby>松本行弘<rt>まつもとゆきひろ</rt>)</ruby>가 만든
+        프로그래밍 언어입니다.</p>
+
+    <p>최근엔 <b>디지털 세상</b>을 살아가기 위한 기본 상식으로 <mark>코딩 교육</mark>이 시행되고 있다.</p>
+   <!-- -p.71 목록을 만드는 태그. -->
+   <h1>관광 안내 전화</h1>
+   <p>한국관광공사에서는 …… 실시하고 있습니다</p>
+   <p>1330에는 …… 이용 가능합니다.</p>
+   <ul>
+       <li>일반전화 : (국번없이) 1330</li>
+       <li>휴대전화 : 064-1330</li>
+   </ul>
+   <h1>1박 2일 가족 여행 코스</h1>
+   <ul>
+       <li>1일차
+           <ol type="a">
+               <li>해녀박물관</li>
+               <li>낚시체험</li>
+           </ol>
+       </li>
+       <li>2일차
+           <ol type="a" start="3">
+               <li>용눈이오름</li>
+               <li>만장굴</li>
+               <li>카약체험</li>
+           </ol>
+       </li>
+   </ul>
+
+   <h1>제주 올레</h1>
+   <dl>
+       <dt>올레 1코스</dt>
+       <dd>코스 : 시흥 초등학교 옆 - 광치기 해변</dd>
+       <dd>거리 : 14.6km(4~5시간)</dd>
+       <dd>난이도 : 중</dd>
+       <dt>올레 2코스</dt>
+       <dd>코스 : 광치기 해변 - 온평 포구</dd>
+       <dd>거리 : 14.5km(4~5시간)</dd>
+       <dd>난이도 : 중</dd>
+   </dl>
+
+   <h1>국가 전염병 위기 경보 수준</h1>
+   <ol type="A">
+       <li>관심</li>
+       <li>주의</li>
+       <li>경계</li>
+       <li>심각</li>
+   </ol>
+
+   <img src ="./사진/alpaca.jpg" width="250" height="150"
+   <br>
+   <h1>Kyunghee Ko</h1>
+
+   <p>이메일 : founcom@gmail.com</p>
+
+   <h2>Who I am?</h2>
+
+   <p>프런트엔드 웹 기술(Front-end Web Tech.)에 관심을 가지고 있습니다.<br>
+       현재 마이크로소프트 공인 최고기술전문가(Most Valueable Professional)로 활동 중이며,<br>
+       제주의 한 시골 마을에서 코딩 중입니다.</p>
+   <hr>
+   <h2>skills</h2>
+
+   <ul>
+       <li>사용언어</li>
+       <ul>
+           <li><mark>HTML</mark></li>
+           <li><mark>CSS</mark></li>
+           <li>Javascript</li>
+           <li>AngularJS</li>
+       </ul>
+       <li>사용 툴</li>
+       <ul>
+           <li>Photoshop(12years)</li>
+           <li>Dreamwraver(19years)</li>
+           <li><b>Visual Studio(5years)</b></li>
+       </ul>
+   </ul>
+   <!-- -p.80 표를 만드는 태그. -->
+   <table border="1">
+       <tr>
+           <th>제목 셀</th>
+           <td>1행 2열</td>
+           <td>1행 3열</td>
+       </tr>
+       <tr>
+           <th>제목 셀</th>
+           <td>2행 2열</td>
+           <td>2행 3열</td>
+       </tr>
+   </table>
+
+   <table border="1">
+       <colgroup>
+       <col style="width:100px; background-color: green">
+       <col style="width:100px;">
+       <col style="width:100px; background-color: green">
+       <col style="width:100px; padding:10px;">
+       </colgroup>
+       <tr>
+           <th style "padding :30px;">이름</th>
+           <td></td>
+           <th>연락처</th>
+           <td></td>
+       </tr>
+       <tr>
+           <th>주소</th>
+           <td colspan="3"></td>
+       </tr>
+       <tr>
+           <th>자기소개</th>
+           <td colspan="3"></td>
+       </tr>
+   </table>
+
+   <table border="1">
+       <caption>
+           <strong>Mordern Browser</strong>
+           <p>국내에서 자주 사용하는 모던 브라우저</p>
+       </caption>
+       <tr>
+           <th>브라우저</th>
+           <th>제조업체</th>
+           <th>다운로드</th>
+       </tr>
+   </table>
+
+   <figure>
+       <figcaption>
+           <p>국내에서 자주 사용하는 <b>모던 브라우저</b></p>
+       </figcaption>
+       <table border="1">
+           <tr>
+               <th>브라우저</th>
+               <th>제조업체</th>
+               <th>다운로드</th>
+           </tr>
+       </table>
+   </figure>
+
+   <p id="summary">다음 표는 HTML5를 지원하는 모던(Mordern Browser)를 정리한 것입니다. 최신 버전일 수록 HTML5를 좀 더 많이 지원하기 때문에 최신 버전을 다운로드 하는 것이
+       좋습니다.</p>
+   <table border="1" aria-descripedly="summary">
+       <caption>Mordern Browser</caption>
+       <tr>
+           <th>브라우저</th>
+           <th>제조업체</th>
+           <th>다운로드</th>
+       </tr>
+   </table>
+
+   <table>
+       <tr>
+           <td rowspan="2"> 자산 : 현금,
+               <br>현금 외 자산</td>
+           <td>부채 : 차입금</td>
+       </tr>
+       <tr>
+           <td>자본:자본금, 이익잉여금</td>
+       </tr>
+   </table>
+
+
+
+
+   <table border="1">
+       <caption>제주특별자치도 학교현황(2015.04.01 기준)</caption>
+       <thead>
+           <tr>
+               <th>구분</th>
+               <th>학교수</th>
+               <th>학급수</th>
+               <th>학생수</th>
+               <th>교원수</th>
+           </tr>
+       </thead>
+       <tbody>
+           <tr>
+               <th>유치원</th>
+               <th>117</th>
+               <th>252</th>
+               <th>5,547</th>
+               <td>474</td>
+           </tr>
+       </tbody>
+       <tfoot>
+           <tr>
+               <th>합계</th>
+               <td>304</td>
+               <td>3,437</td>
+               <td>86,954</td>
+               <td>6,111</td>
+           </tr>
+       </tfoot>
+   </table>
+
+   <table border="1">
+       <caption>colgroup 연습</caption>
+       <colgroup>
+           <col>
+           <col span="2" style="background-color: blue;">
+           <col style="background-color:yellow">
+       </colgroup>
+       <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+       </tr>
+       <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+           <td></td>
+       </tr>
+   </table>
+
+   <table border="1">
+       <caption> 1인당 연간 설탕 소비량
+           <small>(단위:kg)</small></caption>
+       <colgroup>
+           <col style="background-color:#eee;">
+           <col>
+       </colgroup>
+       <tr>
+           <th>WHO 권장량</th>
+           <td>18.25</td>
+       </tr>
+   </table>
+
+<!-- width : 셀의 너비 -->
+<!-- padding : 셀의 테두리와 내용 사이의 간격 -->
+<!-- <style>
+th, td {
+    width : 80px;
+    padding : 10px;
+}
+thead, tfoot{
+    background : white;
+}
+</style>  이걸 테이블의 head 앞에 기록하면 전체 적용됨.-->
+
+<!-- padding 과 margin의 차이?? 글자 안쪽은 padding, 
+ 글 밖의 다른 테두리?가 침범하지 못하게 하는 게 margin -->
+
+
+
+ <hr>
+ <hr>
+ <hr>
+<!-- 96~97꼭 해보기
+-->
+
+
+
+
+
+
+<!-- 이미지와 하이퍼링크 p.100 -->
+<img src="./사진/animals-.jpg" alt="사진이 없으면 뜨는 메시지라고 합니다 ">
+<br>
+<img src="./사진/butterfly.png" width="750" height="750">
+
+<hr>
+
+<h1>텍스트 링크 만들기</h1>
+<a href="http://www.easypub.com">이지스퍼블리싱 홈페이지</a>
+<h1>이미지 링크 만들기</h1>
+<a href="http://www.easypub.com">
+<img src="사진/dandelion.jpg">
+</a>
+
+<h1>텍스트 링크 만들기</h1>
+<p><a href="http://www.easypub.com">이지스퍼블리싱 홈페이지(현재화면)</a></p>
+<p><a href="http://easypub.com" target="_blank">이지스퍼블리싱 홈페이지(새 창 또는 새 탭)</a></p>
+
+<iframe src="child.html" width="600" height="400"></iframe>
+<a href="http://easypub.co.kr/20_menu/BokView/65" target="_top">도서 상세보기</a>
+
+<ul id="menu">
+   <li><a href="#content1">메뉴1</a></li>
+   <li><a href="#content2">메뉴2</a></li>
+   <li><a href="#content3">메뉴3</a></li>
+</ul>
+   <h2 id="content1">내용1</h2>
+   <p>웹 문서가 너무 길 경우 앵커(anchor)라고 합니다.</p>
+   <p><a href="#menu">[메뉴로]</a></p>
+   <h2 id="content2">내용2</h2>
+   <p>웹 문서가 너무 길 경우 앵커(anchor)라고 합니다.</p>
+   <p><a href="#menu">[메뉴로]</a></p>
+   <h2 id="content3">내용3</h2>
+   <p>웹 문서가 너무 길 경우 앵커(anchor)라고 합니다.</p>
+   <p><a href="#menu">[메뉴로]</a></p>
+
+   <img src="./사진/편집장양아치.svg"
+<!-- https://game.uncyclopedia.kr/wiki/%ED%8C%8C%EC%9D%BC:%ED%8E%B8%EC%A7%91%EC%9E%A5%EC%96%91%EC%95%84%EC%B9%98.svg -->
+
+
+
+<img src="./사진/gummi.jpg" alt="음...... " style="margin-top: 100px";
+usemap="#gummiMap">
+<map name="gummiMap">
+   <area shape="rect" coords="166,37,373,196" href="http://naver.com" alt="네이버로 가자" target="_blank">
+
+</map>
+<form action="죄인의0503.html" method="post">
+        <ul>
+            <li>
+                <label for="id">아이디</label>
+                <input type="text" id="id">
+            </li>
+            <li>
+                <label for="pw">비밀번호</label>
+                <input type="password" id="pw">
+            </li>
+                <input type="submit" title="로그인" value="로그인">
+        </ul>
+    </form>
+
+
+    <form>
+        <h3>수강 분야(다수 선택 가능)</h3>
+        <ul>
+            <li> <input name="subject_list" type="checkbox" value="grm">문법</li>
+            <li> <input name="subject_list" type="checkbox" value="wr">작문</li> 
+            <li> <input name="subject_list" type="checkbox" value="rd">독해</li>
+        </ul>
+
+        <h3>수강 과목(1과목만 선택 가능)</h3>
+        <ul>
+            <li>
+                <label><input type="radio" name="subject" value="eng">영어회화</label>
+            </li>
+            <li>
+                <label><input type="radio" name="subject" value="ch">중국어회화</label>
+            </li>
+            <li><label><input type="radio" name="subject" value="jp">일어회화</label>
+            </li>
+        </ul>
+    </form>
+ 
+
+    <form>
+        <fieldset>
+            <legend>개인정보</legend>
+            <ul>
+                <li>
+                    <label for="user-name">이름</label>
+                    <input type="text" id="user-name">
+                </li>
+            <li>
+                <label for="mail">메일주소</label>
+                <input type="email" id="mail">
+            </li>
+            <li>
+                <label for="phone">연락처</label>
+                <input type="tel" id="phone">
+            </li>
+            <li>
+                <label for="homep">블로그/홈페이지
+                <input type="url" id="homep"> 
+                </label>
+            </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <ul>
+                <li>
+                    <label for="id">아이디</label>
+                    <input type="text" id="id">
+                </li>
+                <li>
+                    <label for="pwd">비밀번호</label>
+                    <input type="text" id="pwd">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+    
+
+    <fieldset>
+        <legend>등록 정보</legend>
+        <ul>
+            <li>
+                <label class="reg" for="member">참여인원<small>최대10명</small></label>
+                <input type="number" for="member" value="1" min="0" max="10" step="1">
+            </li>
+            <li>
+                <label class="reg" for="stuffs">지원물품<small>(1인당5개)</small></label>
+                <input type="number" id="stuffs" value="1" min="0" max="50" step="5" size="5">
+            </li>
+            <li>
+                <label class="reg" for="satis">희망단계<small>(하,중,상)</small></label>
+                <input type="range" id="statis" value="1" min="1" max="3">
+            </li>
+        </ul>
+    </fieldset>
+
+    <fieldset>
+        <legend>신청과목</legend>
+        <p>이 달에 신청할 과목을 선택하세요(1과목만 가능)</p>
+        <label><input type="radio" name="subject" value="speaking">회화</label>
+        <label><input type="radio" nam="subject" value="grammar">문법</label>
+        <label><input type="radio" name="subject" value="writing">작문</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>메일링</legend>
+        <p>메일로 받고 싶은 뉴스 주제를 선택해 주세요(복수 선택 가능)</p>
+        <label><input type="checkbox" name="mailing1" value="news">해외 단신</label>
+        <label><input type="checkbox" name="mailing2" value="dialog">5분회화</label>
+    </fieldset>
+
+ <label><input type="date" id="start"></label>
+ <label><input type="date" id="end"></label>
+
+ <h3>원하는 대관시간을 선택하세요(오늘)</h3>
+    <label>시작시간<input type="time" value="09:00" id="start"></label>
+    <label>종료시간<input type="time" value="18:00" id="end"></label>
+
+ <h3>대관시간을 선택하세요(다른 날짜)</h3>
+    <label>시작시간<input type="datetime-local" value="2016-03-02T09:00" id="start"></label>
+    <label>종료시간<input type="datetime-local" value="2016-03-02T18:00" id="end"></label>
+
+    <br>
+    <br>
+    <form action="register.php" method="post">
+        <label>메일주소 <input type="text"></label>
+        <input type="submit" value="제출">
+        <input type="reset" value="다시입력">
+    </form>
+
+    <label>아이디<input type="text" size="15"></label>
+    <label>비밀번호<input type="password" size="15"></label>
+    <input type="image" id="butt" src="./사진/login.jpg" alt="login">
+
+    <br>
+    <br>
+    <br>
+    <form>
+        <input type="button" value="닫기" onclick="window.close()">
+    </form>
+
+    <label class = "reg" for="uname">이름</label>
+    <input type="text" id="uname" autofocus required>
+
+    <label class="reg" for="uid">학번</label>
+    <input type="text" id="uid" placeholder="하이픈없이 입력">
+
+    <label class="reg" for="subj">영어회화(초급)</label>
+    <input type="text" id="subj" value="오전 9:00~11:00" readonly>
+    <br>
+    <br>
+    <label class="reg" for="uname">이름</label>
+    <input type="text" id="uname" autofocus required>
+
+    <label class="reg" for="group">단체주문</label>
+    <input type="number" id="group" value="10" min="100" step="10">
+
+
+    <label>아이디: <input type="text" id="user_id" size="10" minlength="4" maxlength="15"></label>
+    <small style="color:red">4~15자리 이내의 영문과 숫자</small>
+
+    <div class="container">
+        <h1>상품 주문서</h1>
+        <fieldset>
+            <legend>개인정보</legend>
+            <ul>
+                <li>
+                    <label for="uname" class="title">이름</label>
+                    <input type="text" id="uname" placeholder="여백없이 입력" required>
+                </li>
+                <li>
+                    <label for="tel1" class="title">연락처</label>
+                    <input type="tel" id="tel1" placeholder="연락가능한 번호">
+                </li>                
+            </ul>
+         </fieldset>
+        <fieldset>
+            <legend>배송지 정보</legend>
+            <ul>
+                <li>
+                    <label for="addr" class="title">주소</label>
+                    <input type="text" size="40" id="addr" required>
+                </li>
+                <li>
+                    <label for="tel2" class="title">전화번호</label>
+                    <input type="tel" id="tel2" required>
+                </li>
+                <li>
+                    <label for="memo" class="title">메모</label>
+                    <textarea cols="40" rows="3" id="memo"></textarea>
+                </li>
+            </ul>
+        </fieldset>
+         <fieldset>
+            <legend>주문정보</legend>
+            <ul>
+                <li>
+                    <label><input type="checkbox">과테말라 안티구아 (100g) </label>
+                    <label><input type="number" value="0" min="0" max="5">개</label>
+                </li>
+                <li>
+                    <label><input type="checkbox">인도네시아 만델링 (100g)</label>
+                    <label><input type="number" value="0" min="0" max="5">개</label>
+                </li>
+                <li>
+                    <label><input type="checkbox">탐라는도다(블렌딩) (100g)</label>
+                    <label><input type="number" value="0" min="0" max="5">개</label>
+                </li>
+            </ul>
+         </fieldset>
+      </div>
+
+
+
+
+      <label class="reg" for="class">학과</label>
+      <select id="class">
+          <optgroup label="공과대학">
+          <option value="archi">건축공학과</option>
+          <option value="mechanic">기계공학과</option>
+          <option value="indust">산업공학과</option>
+          <option value="elec">전기전자공학과</option>
+          <option value="computer">컴퓨터공학과</option>
+          <option value="chemical">화학공학과</option>
+        </optgroup>
+        <optgroup label="인문대학">
+            <option value="history">사학과</option>
+            <option value="lang">어문학부</option>
+            <option value="philo">철학</option>
+        </optgroup>
+      </select>
+
+      <input type="text" id="interst" list="choices">
+      <datalist id="choices">
+          <option value="grammar" label="문법"></option>
+          <option value="voca" label="어휘"></option>
+          <option value="speaking" label="회화"></option>
+          <option value="listening" label="리스닝"></option>
+          <option value="news" label="뉴스청취"></option>
+      </datalist>
+      
+      <br>
+      <br>
+      <br>
+
+       <textarea name="intro" cols="60" rows="5">
+        열심히 사는 사람들의 손을 잡아주는 곳 - 이지스퍼블리싱
+        우리는 책을 내기 전에 다시 한 번 물어봅니다.
+        " 이 책이 사람들에게 도움이 되는가?"
+        더 쉽게 더 빠르게 지식을 전달하고 싶습니다.
+        이지스퍼블리싱의 책과 앱을 만나보세요.
+    </textarea>
+
+    <input type="submit" vlaue="전송하기">
+    <button type="submit">전송하기</button>
+
+    <form>
+        <button type="submit" class="subm">
+            <img src="./사진/tick.png" alt=""> 전송하기
+        </button>
+    </form>
+
+    <form oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+        <input type="number" name="num1" value="0">
+        <input type="number" name="num2" value="0">
+        =<output name="result" for="num"></output>
+    </form>
+
+
+    <ul>
+        <li>
+            <label>10초 남음</label>
+            <!--전체 60초 중 50초 진행 -->
+            <progress value="50" max="60"></progress>
+        </li>
+    </ul>
+
+    <ul>
+        <li>
+            <label>점유율 0.8</label>
+            <!-- 전체 크기 1을 기준으로 0.8만큼 차지합니다. -->
+            <meter min="0" max="100" value="64"></meter>
+        </li>
+        <li>
+            <label>사용량 64%</label>
+            <!-- 전체 100중에서 64만큼 차지합니다. -->
+            <meter min="1024" max="10240" low="2048" high="8192" value="9216"></meter>
+        </li>
+        <li>
+            <label>트래픽 초과</label>
+            <!-- 전체 크기는 1024~10240인데 높다고 설정한 8192보다 현재 값 9216이 더 큽니다. -->
+            <meter min="1024" max="10240" low="2048" high="8192" value="9216"></meter>
+        </li>
+        <li>
+            <label>적절한 트래픽</label>
+            <!-- 전체 1중에서 현재 0.5를 차지하고 있으며 적정도를 0.8로 설정했습니다. -->
+            <meter value="0.5" optimum="0.8"></meter>
+        </li>
+    </ul>
+    <h1>블루베리에 관한 연구</h1>
+    <h2 class="bluetext">블루베리와 항산화 효능</h2> 
+    <p class="bluetext">블루베리는 항산화제인 안토시아닌과 폴리페놀을 다량 포함하고 있습니다.</p>
+    <p>매사츄세츠 보스톤에 있는 <span class="redtext">USDA 노화에 관한 인류 영양 연구센터 (the USDA Human Nutrition Research Center on Aging)</span> 의 자료에 의하면
+     블루베리는 과일 중에서 가장 항산화 작용이 뛰어난 과일이라고 합니다.  </p>
+    <h2>블루베리와 노화</h2> 
+    <p><span class="redtext"> USDA 인류 영양 연구센터(the USDA Human Nutrition Research Center) </span> 신경과학자들은 쥐들에게 블루베리를 먹임으로써 
+    노화에 의한 인지능력의 손실을 예방해 준다는 사실을 발견하였습니다. </p>
+   
+    <div>
+            <img src="../예제)HTML/08/images/pic1.jpg">
+            <img src="../예제)HTML/08/images/pic2.jpg">
+            <img src="../예제)HTML/08/images/pic3.jpg">
+        </div>
+        <div id="block">
+            <img src="../예제)HTML/08/images/pic1.jpg">
+            <img src="../예제)HTML/08/images/pic2.jpg">
+            <img src="../예제)HTML/08/images/pic3.jpg">
+        </div>
+    <nav>
+        <ul class="mungmung">
+            <li><a href="#">애완견 종류</a></li>
+            <li><a href="#">입양하기</a></li>
+            <li><a href="#">건강돌보기</a></li>
+            <li><a href="#">더불어살기</a></li>
+        </ul>
+
+        <h2>애완견 종류</h2>
+    </nav>
+
+    <br>
+    <br>
+    <div id="inline">
+        <div class="mm" style="background:green"></div>
+        <div class="mm" style="background:orange"></div>
+        <div class="mm" style="background:blue"></div>
+    </div>
+
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+
+</body>
+
+</html>

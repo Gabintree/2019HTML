@@ -1,0 +1,117 @@
+
+            div.first div {
+                width: 300px; /* 너비 */
+                height: 200px; /* 높이 */
+                margin : 20px; /* 영역간 마진 */
+                display: inline-block; /* 가로로 배치 */
+            }
+            .round {
+                border:2px solid red; /* 2px짜리 빨강 실선 */
+                border-radius:20px;  /* 모서리 20px 만큼 라운딩 */
+            }
+            #bg {
+                background:url(../사진/pic1.jpg) no-repeat; /* 배경 이미지 */
+                background-size:cover; /* 영역을 다 채우게*/ 
+            }
+            div.second div {
+                width:200px;
+                height:100px;
+                display:inline-block;
+                margin:15px;
+                background:#ffd800;
+                border:2px solid;
+            }
+            .round1 { border-top-left-radius:100px 50px;}
+            .round2 { border-bottom-right-radius:50px;}
+            
+            div.third div{ 
+                width:200px;
+                height:100px;
+                display:inline-block;
+                margin:15px;
+                border:2px solid;
+                border-radius:20px;
+            }
+            .box1{ box-shadow:2px -2px 5px 0px black;}
+            .box2{ box-shadow:5px 5px 15px 5px grey;}
+            div.fourth div {
+                width:100px;
+                height:100px;
+                background:yellow;
+                border: 3px solid red;
+                border-radius: 50%;
+            }
+            div.fifth div{
+                width:200px;
+                height: 100px;
+                background:#0094ff;
+            }
+            .box1 {margin:30px 50px 30px 50px;}
+            .box2 {margin:30px 50px;}
+            .box3 {margin:50px;}
+            .box4 {margin:30px 5px 10px;}
+            article {
+                width:90%;
+                height:auto;
+                margin:20px 10px;
+                padding:20px;
+            }
+            #pet1{
+                border:1px solid black;
+                border-radius:10px;
+            }
+            #pet2{
+                border:1px dotted blue;
+                border-radius:20px;
+            }
+            #pet3{
+                border:2px double green;
+                border-top-left-radius:30px;
+                border-bottom-right-radius:30px;
+            }
+			nav ul {
+				list-style: none;
+			}
+			nav ul li {
+				display: inline-block;
+        padding:10px 20px;
+        margin:10px;
+        border:1px solid black;
+			}
+			a:link, a:visited {
+				color:black;
+				text-decoration: none;
+			}
+            .left-img{
+                float:left;
+                margin-right:15px;
+            }
+            .bbox1 {
+                padding:20px;
+                margin-right:10px;
+                /* margin-top:10px; */
+                background:#ffd800;
+                float:left;
+            }
+            .bbox2 {
+                background: #0094ff;
+                padding:20px;
+                margin-right:10px;
+                /* margin-top:10px; */
+                float:left;
+            }
+            .bbox3 {
+                background: #00ff21;
+                padding:20px;
+                margin-top:50px;
+                
+            }
+            .bbox4{
+                background:#a874ff;
+                padding:20px;
+                margin-top:20px;
+                clear:both;
+                border:1px solid black;
+            }
+
+
